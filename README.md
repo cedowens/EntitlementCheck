@@ -22,3 +22,5 @@ The following directories are checked:
 1. `chmod +x AppChecker.sh`
 2. `./EntitlementCheck.sh `
 3. ignore stdout and check results.txt when done
+
+![Image](1.pmg)
