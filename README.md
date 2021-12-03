@@ -23,4 +23,4 @@ The following directories are checked:
 2. `./EntitlementCheck.sh `
 3. ignore stdout and check results.txt when done
 
-![Image](1.pmg)
+![Image](pic1.pmg)
