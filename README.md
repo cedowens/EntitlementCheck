@@ -19,7 +19,7 @@ The following directories are checked:
 
 ## Steps
 
-1. `chmod +x AppChecker.sh`
+1. `chmod +x EntitlementCheck.sh`
 2. `./EntitlementCheck.sh `
 3. ignore stdout and check results.txt when done
 
