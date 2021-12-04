@@ -11,6 +11,10 @@ Wrapper around the codesign binary to recursively check installed apps for probl
 - com.apple.security.files.user-selected.read-only 
 - com.apple.security.files.user-selected.read-write 
 
+**NOTE: It is possible that an app can have one or more of the entitlements above while also having hardened runtime enabled (which may mitigate the attack path for abusing the entitlement in question). To check specifically for hardened runtime:**
+
+`codesign --display --verbose /Applications/[name]/Contents/MacOS/[name]`
+
 The following directories are checked:
 - /Applications
 - /usr/local/bin 
