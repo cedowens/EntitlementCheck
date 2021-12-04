@@ -15,13 +15,6 @@ else
 	exit 0
 fi
 
-mkdir -p "/tmp/appcheck/dyld-env-variables"
-mkdir -p "/tmp/appcheck/disable-library-validation"
-mkdir -p "/tmp/appcheck/get-task-allow"
-mkdir -p "/tmp/appcheck/allow-unsigned-executable-memory"
-mkdir -p "/tmp/appcheck/files-downloads"
-mkdir -p "/tmp/appcheck/files-all"
-mkdir -p "/tmp/appcheck/files-user-selected"
 
 echo "====================POTENTIALLY PROBLEMATIC ENTITLEMENTS IN /APPLICATIONS/====================" >> results.txt
 for p in $(ls /Applications)
