@@ -1,20 +1,5 @@
 #!/bin/bash
 
-sysinfo=$(uname -a)
-
-if [[ $sysinfo == *"x86_64" ]];then
-	ARCH=x86_64
-elif [[ $sysinfo == *"arm64e" ]];then
-        ARCH=arm64e
-elif [[ $sysinfo == *"arm64_32" ]];then
-	ARCH=arm64_32
-elif [[ $sysinfo == *"arm64" ]];then
-	ARCH=arm64
-else
-	echo "Architecture match not found. Exiting"
-	exit 0
-fi
-
 
 echo "====================POTENTIALLY PROBLEMATIC ENTITLEMENTS IN /APPLICATIONS/====================" >> results.txt
 for p in $(ls /Applications)
