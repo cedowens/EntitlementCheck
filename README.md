@@ -5,7 +5,7 @@ Currently the scripts check for the following entitlements:
 
 - com.apple.security.cs.disable-library-validation
 - com.apple.security.cs-allow-dyld-environment-variables
-- comapple.security.get-task-allow
+- com.apple.security.get-task-allow
 - com.apple.security.cs.allow-unsigned-executable-memory
 - com.apple.security.files.downlaods.read-only
 - com.apple.security.files.downloads.read-write 
