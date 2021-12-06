@@ -29,14 +29,6 @@ The following directories are checked by both the Entitlements and Hardened Runt
 - /usr/sbin
 
 ## Steps
-I have python and bash implementations of the Entitlements Checker script. 
-
-**Bash script instructions:**
-1. `chmod +x EntitlementCheck.sh`
-2. `./EntitlementCheck.sh `
-3. ignore stdout and check results.txt when done
-
-![Image](pic1.png)
 
 **Python Script Instructions:**
 1. Entitlements Check: `python3 Entitlements_Check.py `
