@@ -43,4 +43,8 @@ I have python and bash implementations of the Entitlements Checker script.
 2. Hardened Runtime Check: `python3 Hardened_Runtime_Check.py `
 3. results will be displayed to stdout. Can simply redirect to an output file as well (ex: `python3 Hardened_Runtime_Check.py > outfile.txt`)
 
+Sample output from Entitlements_Check.py:
 ![Image](pic2.png)
+
+Sample output from Hardened_Runtime_Check.py:
+![Image](pic3.png)
