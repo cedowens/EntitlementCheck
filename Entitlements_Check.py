@@ -11,7 +11,7 @@ for each in d:
 			p = os.listdir(apath)
 			for item in p:
 				apath2 = apath + "/" + item
-				x = subprocess.getstatusoutput('codesign -d --entitlements :- %s' % apath2)
+				x = subprocess.getstatusoutput('codesign -d --entitlements :- "%s"' % apath2)
 				if 'com.apple.security.cs.allow-dyld-environment-variables</key><true/>' in x[1]:
 					print("\033[33m[-] POTENTIALLY INJECTABLE APP (has com.apple.security.cs-allow-dyld-environment-variables entitlement): %s\033[0m" % apath2)
 				if 'com.apple.security.cs.disable-library-validation</key><true/>' in x[1]:
@@ -39,7 +39,7 @@ c = os.listdir("/usr/local/bin")
 for binary in c:
 	bpath = "/usr/local/bin/" + binary
 	try:
-		y = subprocess.getstatusoutput('codesign -d --entitlements :- %s' % bpath)
+		y = subprocess.getstatusoutput('codesign -d --entitlements :- "%s"' % bpath)
 		if 'com.apple.security.cs.allow-dyld-environment-variables</key><true/>' in y[1]:
 			print("\033[91m[-] POTENTIALLY INJECTABLE APP (has com.apple.security.cs-allow-dyld-environment-variables entitlement): %s\033[0m" % bpath)
 		if 'com.apple.security.cs.disable-library-validation</key><true/>' in y[1]:
@@ -67,7 +67,7 @@ b = os.listdir("/usr/sbin")
 for bin in b:
 	spath = "/usr/sbin/%s" % bin
 	try:
-		w = subprocess.getstatusoutput('codesign -d --entitlements :- %s' % spath)
+		w = subprocess.getstatusoutput('codesign -d --entitlements :- "%s"' % spath)
 		if 'com.apple.security.cs.allow-dyld-environment-variables</key><true/>' in w[1]:
 			print("\033[91m[-] POTENTIALLY INJECTABLE APP (has com.apple.security.cs-allow-dyld-environment-variables entitlement): %s\033[0m" % spath)
 		if 'com.apple.security.cs.disable-library-validation</key><true/>' in w[1]:
@@ -95,7 +95,7 @@ a = os.listdir("/usr/bin")
 for f in a:
 	pth = "/usr/bin/%s" % f
 	try:
-		j = subprocess.getstatusoutput('codesign -d --entitlements :- %s' % pth)
+		j = subprocess.getstatusoutput('codesign -d --entitlements :- "%s"' % pth)
 		if 'com.apple.security.cs.allow-dyld-environment-variables</key><true/>' in j[1]:
 			print("\033[91m[-] POTENTIALLY INJECTABLE APP (has com.apple.security.cs-allow-dyld-environment-variables entitlement): %s\033[0m" % pth)
 		if 'com.apple.security.cs.disable-library-validation</key><true/>' in j[1]:
