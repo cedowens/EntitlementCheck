@@ -28,6 +28,8 @@ for each in d:
 					print("\033[33m[-] Binary may have access to files the user has selected in an open or save dialog (has com.apple.security.files.user-selected.read-only or com.apple.security.files.user-selected.read-write entitlement): %s\033[0m" % apath2)
 				if 'com.apple.private.security.clear-library-validation</key><true/>' in x[1]:
 					print("\033[33m[-] Binary can load third party plugins signed by non Apple developers (has com.apple.private.security.clear-library-validation entitlement): %s\033[0m" % apath2)
+				if 'com.apple.private.tcc.allow</key>' in x[1]:
+					print("\033[33m[-] Binary has been granted TCC access to some protected portions of the OS (has com.apple.private.tcc.allow entitlement): %s\033[0m" % apath2)
 		except:
 			pass
 
@@ -56,6 +58,8 @@ for binary in c:
 			print("\033[33m[-] Binary may have access to files the user has selected in an open or save dialog (has com.apple.security.files.user-selected.read-only or com.apple.security.files.user-selected.read-write entitlement): %s\033[0m" % bpath)
 		if 'com.apple.private.security.clear-library-validation</key><true/>' in y[1]:
 			print("\033[33m[-] Binary can load third party plugins signed by non Apple developers (has com.apple.private.security.clear-library-validation entitlement): %s\033[0m" % bpath)
+		if 'com.apple.private.tcc.allow</key>' in y[1]:
+			print("\033[33m[-] Binary has been granted TCC access to some protected portions of the OS (has com.apple.private.tcc.allow entitlement): %s\033[0m" % bpath)
 	except:
 		pass
 
@@ -84,6 +88,8 @@ for bin in b:
 			print("\033[33m[-] Binary may have access to files the user has selected in an open or save dialog (has com.apple.security.files.user-selected.read-only or com.apple.security.files.user-selected.read-write entitlement): %s\033[0m" % spath)
 		if 'com.apple.private.security.clear-library-validation</key><true/>' in w[1]:
 			print("\033[33m[-] Binary can load third party plugins signed by non Apple developers (has com.apple.private.security.clear-library-validation entitlement): %s\033[0m" % spath)
+		if 'com.apple.private.tcc.allow</key>' in w[1]:
+			print("\033[33m[-] Binary has been granted TCC access to some protected portions of the OS (has com.apple.private.tcc.allow entitlement): %s\033[0m" % spath)
 	except:
 		pass
 
@@ -112,6 +118,8 @@ for f in a:
 			print("\033[33m[-] Binary may have access to files the user has selected in an open or save dialog (has com.apple.security.files.user-selected.read-only or com.apple.security.files.user-selected.read-write entitlement): %s\033[0m" % pth)
 		if 'com.apple.private.security.clear-library-validation</key><true/>' in j[1]:
 			print("\033[33m[-] Binary can load third party plugins signed by non Apple developers (has com.apple.private.security.clear-library-validation entitlement): %s\033[0m" % pth)
+		if 'com.apple.private.tcc.allow</key>' in j[1]:
+			print("\033[33m[-] Binary has been granted TCC access to some protected portions of the OS (has com.apple.private.tcc.allow entitlement): %s\033[0m" % pth)
 	except:
 		pass
 
