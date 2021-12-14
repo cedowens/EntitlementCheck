@@ -29,15 +29,15 @@ for each in d:
 				if 'com.apple.private.security.clear-library-validation</key><true/>' in x[1]:
 					print("\033[33m[-] Binary can load third party plugins signed by non Apple developers (has com.apple.private.security.clear-library-validation entitlement): %s\033[0m" % apath2)
 				if 'com.apple.private.tcc.allow</key>' in x[1]:
-					print("\033[33m[-] Binary has been granted TCC access to some protected portions of the OS (has com.apple.private.tcc.allow entitlement): %s\033[0m" % apath2)
+					print("\033[33m[-] Binary may have TCC access to some protected portions of the OS (has com.apple.private.tcc.allow entitlement): %s\033[0m" % apath2)
 				if 'kTCCServiceSystemPolicyDocumentsFolder' in x[1]:
-					print("\033[33m[-] Binary has been granted TCC access to ~/Documents (has kTCCServiceSystemPolicyDocumentsFolder access): %s\033[0m" % apath2)
+					print("\033[33m[-] Binary may have TCC access to ~/Documents (has kTCCServiceSystemPolicyDocumentsFolder access): %s\033[0m" % apath2)
 				if 'kTCCServiceSystemPolicyDownloadsFolder' in x[1]:
-					print("\033[33m[-] Binary has been granted TCC access to ~/Downloads (has kTCCServiceSystemPolicyDownloadsFolder access): %s\033[0m" % apath2)
+					print("\033[33m[-] Binary may have TCC access to ~/Downloads (has kTCCServiceSystemPolicyDownloadsFolder access): %s\033[0m" % apath2)
 				if 'kTCCServiceSystemPolicyDesktopFolder' in x[1]:
-					print("\033[33m[-] Binary has been granted TCC access to ~/Desktop (has kTCCServiceSystemPolicyDesktopFolder access): %s\033[0m" % apath2)
+					print("\033[33m[-] Binary may have TCC access to ~/Desktop (has kTCCServiceSystemPolicyDesktopFolder access): %s\033[0m" % apath2)
 				if 'kTCCServiceSystemPolicyAllFiles' in x[1]:
-					print("\033[33m[-] Binary has been granted FDA access (has kTCCServiceSystemPolicyAllFiles access): %s\033[0m" % apath2)
+					print("\033[33m[-] Binary may have FDA access (has kTCCServiceSystemPolicyAllFiles access): %s\033[0m" % apath2)
 		except:
 			pass
 
@@ -67,15 +67,15 @@ for binary in c:
 		if 'com.apple.private.security.clear-library-validation</key><true/>' in y[1]:
 			print("\033[33m[-] Binary can load third party plugins signed by non Apple developers (has com.apple.private.security.clear-library-validation entitlement): %s\033[0m" % bpath)
 		if 'com.apple.private.tcc.allow</key>' in y[1]:
-			print("\033[33m[-] Binary has been granted TCC access to some protected portions of the OS (has com.apple.private.tcc.allow entitlement): %s\033[0m" % bpath)
+			print("\033[33m[-] Binary may have TCC access to some protected portions of the OS (has com.apple.private.tcc.allow entitlement): %s\033[0m" % bpath)
 		if 'kTCCServiceSystemPolicyDocumentsFolder' in y[1]:
-			print("\033[33m[-] Binary has been granted TCC access to ~/Documents (has kTCCServiceSystemPolicyDocumentsFolder access): %s\033[0m" % bpath)
+			print("\033[33m[-] Binary may have TCC access to ~/Documents (has kTCCServiceSystemPolicyDocumentsFolder access): %s\033[0m" % bpath)
 		if 'kTCCServiceSystemPolicyDownloadsFolder' in y[1]:
-			print("\033[33m[-] Binary has been granted TCC access to ~/Downloads (has kTCCServiceSystemPolicyDownloadsFolder access): %s\033[0m" % bpath)
+			print("\033[33m[-] Binary may have TCC access to ~/Downloads (has kTCCServiceSystemPolicyDownloadsFolder access): %s\033[0m" % bpath)
 		if 'kTCCServiceSystemPolicyDesktopFolder' in y[1]:
-			print("\033[33m[-] Binary has been granted TCC access to ~/Desktop (has kTCCServiceSystemPolicyDesktopFolder access): %s\033[0m" % bpath)
+			print("\033[33m[-] Binary may have TCC access to ~/Desktop (has kTCCServiceSystemPolicyDesktopFolder access): %s\033[0m" % bpath)
 		if 'kTCCServiceSystemPolicyAllFiles' in y[1]:
-			print("\033[33m[-] Binary has been granted FDA access (has kTCCServiceSystemPolicyAllFiles access): %s\033[0m" % bpath)
+			print("\033[33m[-] Binary may have FDA access (has kTCCServiceSystemPolicyAllFiles access): %s\033[0m" % bpath)
 	except:
 		pass
 
@@ -105,15 +105,15 @@ for bin in b:
 		if 'com.apple.private.security.clear-library-validation</key><true/>' in w[1]:
 			print("\033[33m[-] Binary can load third party plugins signed by non Apple developers (has com.apple.private.security.clear-library-validation entitlement): %s\033[0m" % spath)
 		if 'com.apple.private.tcc.allow</key>' in w[1]:
-			print("\033[33m[-] Binary has been granted TCC access to some protected portions of the OS (has com.apple.private.tcc.allow entitlement): %s\033[0m" % spath)
+			print("\033[33m[-] Binary may have TCC access to some protected portions of the OS (has com.apple.private.tcc.allow entitlement): %s\033[0m" % spath)
 		if 'kTCCServiceSystemPolicyDocumentsFolder' in w[1]:
-			print("\033[33m[-] Binary has been granted TCC access to ~/Documents (has kTCCServiceSystemPolicyDocumentsFolder access): %s\033[0m" % spath)
+			print("\033[33m[-] Binary may have TCC access to ~/Documents (has kTCCServiceSystemPolicyDocumentsFolder access): %s\033[0m" % spath)
 		if 'kTCCServiceSystemPolicyDownloadsFolder' in w[1]:
-			print("\033[33m[-] Binary has been granted TCC access to ~/Downloads (has kTCCServiceSystemPolicyDownloadsFolder access): %s\033[0m" % spath)
+			print("\033[33m[-] Binary may have TCC access to ~/Downloads (has kTCCServiceSystemPolicyDownloadsFolder access): %s\033[0m" % spath)
 		if 'kTCCServiceSystemPolicyDesktopFolder' in w[1]:
-			print("\033[33m[-] Binary has been granted TCC access to ~/Desktop (has kTCCServiceSystemPolicyDesktopFolder access): %s\033[0m" % spath)
+			print("\033[33m[-] Binary may have TCC access to ~/Desktop (has kTCCServiceSystemPolicyDesktopFolder access): %s\033[0m" % spath)
 		if 'kTCCServiceSystemPolicyAllFiles' in w[1]:
-			print("\033[33m[-] Binary has been granted FDA access (has kTCCServiceSystemPolicyAllFiles access): %s\033[0m" % spath)
+			print("\033[33m[-] Binary may have FDA access (has kTCCServiceSystemPolicyAllFiles access): %s\033[0m" % spath)
 	except:
 		pass
 
@@ -143,15 +143,15 @@ for f in a:
 		if 'com.apple.private.security.clear-library-validation</key><true/>' in j[1]:
 			print("\033[33m[-] Binary can load third party plugins signed by non Apple developers (has com.apple.private.security.clear-library-validation entitlement): %s\033[0m" % pth)
 		if 'com.apple.private.tcc.allow</key>' in j[1]:
-			print("\033[33m[-] Binary has been granted TCC access to some protected portions of the OS (has com.apple.private.tcc.allow entitlement): %s\033[0m" % pth)
+			print("\033[33m[-] Binary may have TCC access to some protected portions of the OS (has com.apple.private.tcc.allow entitlement): %s\033[0m" % pth)
 		if 'kTCCServiceSystemPolicyDocumentsFolder' in j[1]:
-			print("\033[33m[-] Binary has been granted TCC access to ~/Documents (has kTCCServiceSystemPolicyDocumentsFolder access): %s\033[0m" % pth)
+			print("\033[33m[-] Binary may have TCC access to ~/Documents (has kTCCServiceSystemPolicyDocumentsFolder access): %s\033[0m" % pth)
 		if 'kTCCServiceSystemPolicyDownloadsFolder' in j[1]:
-			print("\033[33m[-] Binary has been granted TCC access to ~/Downloads (has kTCCServiceSystemPolicyDownloadsFolder access): %s\033[0m" % pth)
+			print("\033[33m[-] Binary may have TCC access to ~/Downloads (has kTCCServiceSystemPolicyDownloadsFolder access): %s\033[0m" % pth)
 		if 'kTCCServiceSystemPolicyDesktopFolder' in j[1]:
-			print("\033[33m[-] Binary has been granted TCC access to ~/Desktop (has kTCCServiceSystemPolicyDesktopFolder access): %s\033[0m" % pth)
+			print("\033[33m[-] Binary may have TCC access to ~/Desktop (has kTCCServiceSystemPolicyDesktopFolder access): %s\033[0m" % pth)
 		if 'kTCCServiceSystemPolicyAllFiles' in j[1]:
-			print("\033[33m[-] Binary has been granted FDA access (has kTCCServiceSystemPolicyAllFiles access): %s\033[0m" % pth)
+			print("\033[33m[-] Binary may have FDA access (has kTCCServiceSystemPolicyAllFiles access): %s\033[0m" % pth)
 	except:
 		pass
 
