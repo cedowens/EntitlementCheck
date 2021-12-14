@@ -13,6 +13,7 @@ Currently the scripts check for the following entitlements:
 - com.apple.security.files.user-selected.read-only 
 - com.apple.security.files.user-selected.read-write
 - com.apple.private.security.clear-library-validation 
+- com.apple.private.tcc.allow
 
 **NOTE: It is possible that an app can have one or more of the entitlements above while also having hardened runtime enabled (which may mitigate the attack path for abusing the entitlement in question). To check specifically for hardened runtime, run the command below and search for flags in the output:**
 
