@@ -16,7 +16,7 @@ for each in d:
 				if 'com.apple.security.cs.allow-dyld-environment-variables</key><true/>' in x[1]:
 					print("\033[33m[-] POTENTIALLY INJECTABLE APP (has com.apple.security.cs-allow-dyld-environment-variables entitlement): %s\033[0m" % apath2)
 				if 'com.apple.security.cs.disable-library-validation</key><true/>' in x[1]:
-					print("\033[33m[-] Binary can load artibrary unsigned plugins/frameworks (has com.apple.security.cs.disable-library-validation entitlement): %s\033[0m" % apath2)
+					print("\033[33m[-] Binary can load arbitrary unsigned plugins/frameworks (has com.apple.security.cs.disable-library-validation entitlement): %s\033[0m" % apath2)
 				if 'com.apple.security.get-task-allow</key><true/>' in x[1]:
 					print("\033[33m[-] Binary allows other non sandboxed processes to attach (has com.apple.security.get-task-allow entitlement): %s\033[0m" % apath2)
 				if 'com.apple.security.cs.allow-unsigned-executable-memory</key><true/>' in x[1]:
@@ -54,7 +54,7 @@ for binary in c:
 		if 'com.apple.security.cs.allow-dyld-environment-variables</key><true/>' in y[1]:
 			print("\033[91m[-] POTENTIALLY INJECTABLE APP (has com.apple.security.cs-allow-dyld-environment-variables entitlement): %s\033[0m" % bpath)
 		if 'com.apple.security.cs.disable-library-validation</key><true/>' in y[1]:
-			print("\033[33m[-] Binary can load artibrary unsigned plugins/frameworks (has com.apple.security.cs.disable-library-validation entitlement): %s\033[0m" % bpath)
+			print("\033[33m[-] Binary can load arbitrary unsigned plugins/frameworks (has com.apple.security.cs.disable-library-validation entitlement): %s\033[0m" % bpath)
 		if 'com.apple.security.get-task-allow</key><true/>' in y[1]:
 			print("\033[33m[-] Binary allows other non sandboxed processes to attach (has com.apple.security.get-task-allow entitlement): %s\033[0m" % bpath)
 		if 'com.apple.security.cs.allow-unsigned-executable-memory</key><true/>' in y[1]:
@@ -92,7 +92,7 @@ for bin in b:
 		if 'com.apple.security.cs.allow-dyld-environment-variables</key><true/>' in w[1]:
 			print("\033[91m[-] POTENTIALLY INJECTABLE APP (has com.apple.security.cs-allow-dyld-environment-variables entitlement): %s\033[0m" % spath)
 		if 'com.apple.security.cs.disable-library-validation</key><true/>' in w[1]:
-			print("\033[33m[-] Binary can load artibrary unsigned plugins/frameworks (has com.apple.security.cs.disable-library-validation entitlement): %s\033[0m" % spath)
+			print("\033[33m[-] Binary can load arbitrary unsigned plugins/frameworks (has com.apple.security.cs.disable-library-validation entitlement): %s\033[0m" % spath)
 		if 'com.apple.security.get-task-allow</key><true/>' in w[1]:
 			print("\033[33m[-] Binary allows other non sandboxed processes to attach (has com.apple.security.get-task-allow entitlement): %s\033[0m" % spath)
 		if 'com.apple.security.cs.allow-unsigned-executable-memory</key><true/>' in w[1]:
@@ -130,7 +130,7 @@ for f in a:
 		if 'com.apple.security.cs.allow-dyld-environment-variables</key><true/>' in j[1]:
 			print("\033[91m[-] POTENTIALLY INJECTABLE APP (has com.apple.security.cs-allow-dyld-environment-variables entitlement): %s\033[0m" % pth)
 		if 'com.apple.security.cs.disable-library-validation</key><true/>' in j[1]:
-			print("\033[33m[-] Binary can load artibrary unsigned plugins/frameworks (has com.apple.security.cs.disable-library-validation entitlement): %s\033[0m" % pth)
+			print("\033[33m[-] Binary can load arbitrary unsigned plugins/frameworks (has com.apple.security.cs.disable-library-validation entitlement): %s\033[0m" % pth)
 		if 'com.apple.security.get-task-allow</key><true/>' in j[1]:
 			print("\033[33m[-] Binary allows other non sandboxed processes to attach (has com.apple.security.get-task-allow entitlement): %s\033[0m" % pth)
 		if 'com.apple.security.cs.allow-unsigned-executable-memory</key><true/>' in j[1]:
