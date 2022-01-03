@@ -37,6 +37,9 @@ The following directories are checked by both the Entitlements and Hardened Runt
 2. Hardened Runtime Check: `chmod +x Hardened_Runtime_Check.py && ./Hardened_Runtime_Check.py ` OR `python3 Hardened_Runtime_Check.py `
 3. results will be displayed to stdout. Can simply redirect to an output file as well (ex: `python3 Hardened_Runtime_Check.py > outfile.txt`)
 
+**you can use my Dylib Injection binary at https://github.com/cedowens/Inject_Dylib to validate/test potentially injectable apps found by these scripts**
+
+## Sample Output
 Sample output from Entitlements_Check.py:
 ![Image](pic2.png)
 
