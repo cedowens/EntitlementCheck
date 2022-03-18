@@ -26,6 +26,7 @@ For Hardened Runtime checks, my script runs the command below and filters based 
 
 The following directories are checked by both the Entitlements and Hardened Runtime Check Scripts:
 - /Applications
+- /System/Applications/Utilities
 - /usr/local/bin 
 - /usr/bin 
 - /usr/sbin
