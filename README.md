@@ -1,7 +1,7 @@
 # Entitlement AND Hardened Runtime Check
 Wrapper around the codesign binary to recursively check installed apps for problematic entitlements and for whether or not Hardened Runtime is enabled. 
 
-Currently the scripts check for the following entitlements:
+The following entitlements are checked currently:
 
 - com.apple.security.cs.disable-library-validation
 - com.apple.security.cs-allow-dyld-environment-variables
