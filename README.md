@@ -31,7 +31,20 @@ The following directories are checked by both the Entitlements and Hardened Runt
 - /usr/bin 
 - /usr/sbin
 
-## Steps
+## Steps - To Run The Swift Versions:
+
+**Instructions:**
+1. `EntitlementCheck.swift`: Wrapper around the codesign binary to search for apps/bins with potentially problematic entitlements. Swift version of my original python script at https://github.com/cedowens/EntitlementCheck. Steps:
+
+> swiftc -o EntitlementCheck EntitlementCheck.swift
+> ./EntitlementCheck
+
+2. `HardenedRuntimeCheck.swift`: Wrapper around the codesign binary to search for apps/bins without hardened runtime enabled. Swift version of my original python script at https://github.com/cedowens/EntitlementCheck. Steps:
+
+> swiftc -o HardenedRuntimeCheck HardenedRuntimeCheck.swift
+> ./HardenedRuntimeCheck
+
+## Steps - To Run The Python Versions:
 
 **Instructions:**
 1. Entitlements Check: `chmod +x Entitlements_Check.py && ./Entitlements_Check.py ` OR `python3 Entitlements_Check.py `
